@@ -333,7 +333,7 @@ h2{
   margin-bottom: 20px;
 }
 
-.services-content ul {
+/* .services-content ul {
   margin-bottom: 30px;
   list-style: none;
   padding: 0;
@@ -342,12 +342,53 @@ h2{
 .services-content ul li {
   margin-bottom: 10px;
   font-size: clamp(1.2rem, 1.6vw, 1.6rem);
+} */
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
 }
+
+details {
+  background-color: #222;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+summary {
+  font-weight: 600;
+  font-size: 1.1rem;
+  list-style: none;
+}
+
+summary::marker {
+  display: none;
+}
+
+details[open] {
+  background-color: #333;
+  border-color: #666;
+}
+
+details p {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
 
 /* Botão */
 .services-content .btn {
   display: inline-block;
   padding: 14px 24px;
+  margin-top: 10px;
   margin-bottom: 10px;
   background: #c27ba0;
   color: #fff;
