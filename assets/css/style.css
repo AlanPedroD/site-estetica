@@ -351,6 +351,7 @@ h2{
   margin-top: 20px;
 }
 
+/* CARD */
 details {
   background-color: #1e1e1e;
   border: 1px solid #333;
@@ -366,9 +367,10 @@ details:hover {
   background-color: #242424;
 }
 
+/* CABEÇALHO (SUMMARY) */
 summary {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between; /* separa os lados */
   align-items: center;
   font-weight: 600;
   font-size: 1.05rem;
@@ -376,35 +378,47 @@ summary {
   user-select: none;
 }
 
-summary i {
-  font-size: 1.1rem;
+summary::-webkit-details-marker {
+  display: none; /* remove o triângulo padrão */
 }
 
+/* LADO ESQUERDO */
+.summary-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ÍCONE PRINCIPAL */
+.summary-left i {
+  color: #e0b0ff; /* lilás suave */
+  font-size: 1.2rem;
+}
+
+/* ÍCONE DE EXPANSÃO (+) */
 summary .icon {
-  margin-left: 10px;
+  font-size: 1.1rem;
   transition: transform 0.3s ease;
+  color: #aaa;
 }
 
-details[open] .icon {
-  transform: rotate(45deg); /* transforma o “+” em “×” */
-}
-
+/* QUANDO ABERTO */
 details[open] {
   background-color: #292929;
   border-color: #555;
 }
 
+details[open] .icon {
+  transform: rotate(45deg); /* transforma o “+” em “×” */
+  color: #fff;
+}
+
+/* TEXTO INTERNO */
 details p {
   margin-top: 10px;
   font-size: 0.95rem;
   color: #ccc;
   line-height: 1.5;
-}
-
-/* Ícones principais à esquerda */
-summary i:first-child {
-  color: #e0b0ff; /* tom lilás suave */
-  margin-right: 8px;
 }
 
 
