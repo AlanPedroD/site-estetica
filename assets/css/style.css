@@ -466,12 +466,6 @@ details p {
     width: 100%;
   }
 }
-@media(max-width: 420px){
-  .gallery-filters{
-    display: none;
-  }
-}
-
 
 /*! GALERIA */
 .gallery {
