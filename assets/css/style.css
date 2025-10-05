@@ -347,41 +347,68 @@ h2{
 .services-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   margin-top: 20px;
 }
 
 details {
-  background-color: #222;
-  border: 1px solid #444;
-  border-radius: 8px;
-  padding: 12px 16px;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 14px 18px;
   color: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-summary {
-  font-weight: 600;
-  font-size: 1.1rem;
-  list-style: none;
+details:hover {
+  border-color: #555;
+  background-color: #242424;
 }
 
-summary::marker {
-  display: none;
+summary {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.05rem;
+  list-style: none;
+  user-select: none;
+}
+
+summary i {
+  font-size: 1.1rem;
+}
+
+summary .icon {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+details[open] .icon {
+  transform: rotate(45deg); /* transforma o “+” em “×” */
 }
 
 details[open] {
-  background-color: #333;
-  border-color: #666;
+  background-color: #292929;
+  border-color: #555;
 }
 
 details p {
-  margin-top: 8px;
+  margin-top: 10px;
   font-size: 0.95rem;
   color: #ccc;
   line-height: 1.5;
 }
+
+/* Ícones principais à esquerda */
+summary i:first-child {
+  color: #e0b0ff; /* tom lilás suave */
+  margin-right: 8px;
+}
+
+
+
 
 
 /* Botão */
