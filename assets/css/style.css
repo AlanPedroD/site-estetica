@@ -333,17 +333,6 @@ h2{
   margin-bottom: 20px;
 }
 
-/* .services-content ul {
-  margin-bottom: 30px;
-  list-style: none;
-  padding: 0;
-}
-
-.services-content ul li {
-  margin-bottom: 10px;
-  font-size: clamp(1.2rem, 1.6vw, 1.6rem);
-} */
-
 .services-list {
   display: flex;
   flex-direction: column;
@@ -373,7 +362,7 @@ summary {
   justify-content: space-between; /* separa os lados */
   align-items: center;
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: clamp(1.4rem, 2vw, 1.6rem);
   list-style: none;
   user-select: none;
 }
@@ -404,20 +393,23 @@ summary .icon {
 
 /* QUANDO ABERTO */
 details[open] {
-  background-color: #292929;
+  background-color: #fff;
+  color: #000;
   border-color: #555;
 }
 
 details[open] .icon {
   transform: rotate(45deg); /* transforma o “+” em “×” */
-  color: #fff;
+  color: #000;
+}
+details[open] p{
+  color: #000000c8;
 }
 
 /* TEXTO INTERNO */
 details p {
   margin-top: 10px;
-  font-size: 0.95rem;
-  color: #ccc;
+  color: #fff;
   line-height: 1.5;
 }
 
