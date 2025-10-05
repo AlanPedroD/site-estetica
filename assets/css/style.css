@@ -462,6 +462,14 @@ details p {
   details p{
     text-align: left;
   }
+  .btn{
+    width: 100%;
+  }
+}
+@media(max-width: 420px){
+  .gallery-filters{
+    display: none;
+  }
 }
 
 
