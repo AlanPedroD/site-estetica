@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beleza Natural</title>
+  <!-- Fonte 01 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <!-- Fonte awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- css padrão  -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!-- Header  -->
+  <header class="header">
+  <div class="container header-inner">
+    <!-- Logo -->
+    <div class="brand">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 140" class="flor">
+        <defs>
+          <!-- gradiente externo -->
+          <linearGradient id="grad-externa" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#84297d"/>
+            <stop offset="100%" stop-color="#c272d1"/>
+          </linearGradient>
+
+          <!-- gradiente interno -->
+          <radialGradient id="grad-interna" cx="50%" cy="50%" r="70%">
+            <stop offset="0%" stop-color="#ffffff"/>
+            <stop offset="100%" stop-color="#c272d1"/>
+          </radialGradient>
+        </defs>
+
+        <!-- Camada externa -->
+        <g class="camada-externa">
+          <path class="petala-central-externa" d="M120 12 C135 40 135 80 120 118 C105 80 105 40 120 12 Z"/>
+          <path class="petala-esquerda-externa" d="M80 34 C65 62 70 92 120 118 C88 88 84 58 80 34 Z"/>
+          <path class="petala-direita-externa" d="M160 34 C175 62 170 92 120 118 C152 88 156 58 160 34 Z"/>
+          <path class="petala-esquerda-inferior-externa" d="M38 74 C68 64 92 84 120 118 C72 96 52 86 38 74 Z"/>
+          <path class="petala-direita-inferior-externa" d="M202 74 C172 64 148 84 120 118 C168 96 188 86 202 74 Z"/>
+        </g>
+
+        <!-- Camada interna -->
+        <g class="camada-interna">
+          <path class="petala-central-interna" d="M120 34 C128 54 128 76 120 96 C112 76 112 54 120 34 Z"/>
+          <path class="petala-esquerda-interna" d="M96 52 C88 66 92 78 106 92 C100 74 98 62 96 52 Z"/>
+          <path class="petala-direita-interna" d="M144 52 C152 66 148 78 134 92 C140 74 142 62 144 52 Z"/>
+        </g>
+      </svg>
+
+      <a href="index.html" class="logo">
+        <span class="logo-text">Dra. Julia G</span>
+        <span class="logo-sub">Estética Avançada</span>
+      </a>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <!-- Use button para acessibilidade -->
+      <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+
+<!-- Hero  -->
+  <section class="hero">
+  <div class="container hero-inner">
+    <!-- Coluna de texto -->
+    <div class="hero-content">
+      <h1>
+        Cuidamos da sua beleza com tratamentos individualizados, para um envelhecimento natural
+      </h1>
+      <!-- <p>
+        Tratamentos estéticos modernos e personalizados para você se sentir ainda melhor.
+      </p> -->
+      <a href="#contato" class="btn">
+        <i class="fab fa-whatsapp"></i>Agendar Consulta
+      </a>
+    </div>
+
+    <!-- Coluna de imagem -->
+    <div class="hero-image">
+      <img src="assets/imagens/img-hero-01.jpg" alt="Mulher em tratamento estético">
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="services">
+  <div class="container services-inner">
+    <!-- Texto -->
+    <div class="services-content">
+      <h2>Nossos Serviços</h2>
+      <p>Oferecemos tratamentos modernos e personalizados para realçar sua beleza natural. Nossa equipe especializada garante resultados de alta qualidade e segurança.</p>
+      <ul>
+        <li>✨ Limpeza de Pele</li>
+        <li>💆‍♀️ Massagem Relaxante</li>
+        <li>🌸 Tratamentos Faciais</li>
+        <li>💅 Manicure & Pedicure</li>
+      </ul>
+      <a href="#contato" class="btn">
+        <i class="fab fa-whatsapp"></i>Agende seu horário
+      </a>
+    </div>
+
+    <!-- Imagem destaque -->
+    <div class="services-image">
+      <img src="assets/imagens/img-servicos-html-01.jpg" alt="Tratamento estético">
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Galeria -->
+    <section class="gallery">
+  <div class="container">
+    <h2>Conheça nosso espaço</h2>
+
+    <!-- Menu de filtros -->
+    <div class="gallery-filters">
+      <button class="active" data-filter="all">Todos</button>
+      <button data-filter="centro">Centro</button>
+      <button data-filter="procedimentos">Procedimentos</button>
+    </div>
+
+    <!-- Grid da galeria -->
+    <div class="gallery-grid"></div>
+  </div>
+</section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Visualizador de imagem">
+    <div class="lightbox-content">
+      <img class="lightbox-img" src="" alt="">
+      <button class="lightbox-close" aria-label="Fechar visualizador">×</button>
+      <div class="lightbox-caption" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <!-- Seção Sobre -->
+<section class="about">
+  <div class="container about-grid">
+    <div class="about-text">
+      <h2>Sobre Nós</h2>
+      <p>
+        Nosso espaço foi criado com o objetivo de proporcionar bem-estar, conforto e qualidade.
+        Contamos com uma equipe especializada e um ambiente moderno para atender cada cliente com
+        toda atenção e cuidado que merece.
+      </p>
+      <p>
+        Valorizamos a confiança e acreditamos que cada detalhe faz a diferença na sua experiência.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="assets/imagens/img-hero-01.jpg" alt="Equipe do nosso espaço">
+    </div>
+  </div>
+</section>
+
+  <!-- CONTATO  -->
+   <!-- Seção Contato -->
+<section class="contact" id="contato">
+  <div class="container contact-grid">
+
+    <!-- Mapa -->
+    <div class="contact-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.7675938444115!2d-49.27325162546228!3d-25.42895408379168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce44bfb000001%3A0xb21e06cf6f2b8db7!2sCuritiba%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1698000000000!5m2!1spt-BR!2sbr"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    
+    <!-- Informações de contato -->
+    <div class="contact-info">
+      <h2>Entre em Contato</h2>
+
+      <div class="contact-item">
+        <h3>Endereço</h3>
+        <p>Av. xxxx, 625 Sala 501 – Ponta Verde, xxxxx – AL, 57036-000</p>
+      </div>
+
+      <div class="contact-item">
+        <h3>Horários de Atendimento</h3>
+        <p>Segunda a Sexta: 08h às 18h</p>
+        <p>Sábados: 08h às 12h</p>
+      </div>
+
+      <div class="contact-item">
+        <h3>Outras Informações</h3>
+        <p>Atendimento com hora marcada.</p>
+        <p>Estacionamento próprio no local.</p>
+      </div>
+
+      <!-- Redes sociais -->
+      <div class="contact-socials">
+        <ul>
+          <li>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    
+
+  </div>
+</section>
+
+
+  <!-- RODAPÉ -->
+   <footer class="footer">
+  <div class="container footer-content">
+    <!-- Coluna 1: Logo e descrição -->
+    <div class="footer-column">
+      <h3 class="footer-logo">Estética Bella</h3>
+      <p class="frase-logo-rodape">Realçando sua beleza natural com procedimentos estéticos modernos e personalizados.</p>
+    </div>
+
+    <!-- Coluna 2: Links rápidos -->
+    <div class="footer-column">
+      <h4>Links rápidos</h4>
+      <ul>
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </div>
+
+    <!-- Coluna 3: Contato -->
+    <div class="footer-column">
+      <h4>Contato</h4>
+      <p>📍 Av. xxxx, 625 Sala 501 – Ponta Verde, AL</p>
+      <p>📞 (82) 99999-9999</p>
+      <p>✉️ contato@esteticabella.com</p>
+    </div>
+
+    <!-- Coluna 4: Redes sociais -->
+    <div class="footer-column">
+      <h4>Siga-nos</h4>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Estética Bella. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+  <a href="https://wa.me/5541999999999" class="whatsapp-button" target="_blank" aria-label="Fale conosco pelo WhatsApp">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
