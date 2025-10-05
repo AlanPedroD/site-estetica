@@ -348,11 +348,12 @@ details {
   padding: 14px 18px;
   color: #000;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 details:hover {
   background-color: #a85d86;
+  color: #f9f9f9;
 }
 
 /* CABEÇALHO (SUMMARY) */
@@ -385,9 +386,9 @@ summary::-webkit-details-marker {
 
 /* ÍCONE DE EXPANSÃO (+) */
 summary .icon {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   transition: transform 0.3s ease;
-  color: #aaa;
+  color: #111;
 }
 
 /* QUANDO ABERTO */
