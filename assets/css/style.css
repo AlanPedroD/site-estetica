@@ -676,7 +676,8 @@ h2{
 .footer-column h3,
 .footer-column h4 {
   margin-bottom: 15px;
-  color: #c27ba0;
+  /* color: #c27ba0; */
+  color: #84297d;
 }
 
 .footer-logo {
