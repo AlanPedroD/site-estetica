@@ -413,10 +413,6 @@ details p {
   line-height: 1.5;
 }
 
-
-
-
-
 /* Botão */
 .services-content .btn {
   display: inline-block;
@@ -462,6 +458,9 @@ details p {
   .services-image {
     justify-content: center;
     margin-top: 20px;
+  }
+  details p{
+    text-align: left;
   }
 }
 
