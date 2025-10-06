@@ -459,6 +459,10 @@ details p {
     justify-content: center;
     margin-top: 20px;
   }
+  details:hover {
+    background-color: #f9f9f9; /* cor padrão */
+    color: #000;
+  }
   details p{
     text-align: left;
   }
